@@ -1,0 +1,433 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Adquiere conocimientos que permitan hacer crecer tu negocio bajo metodologías y herramientas prácticas del marketing y las ventas.">
+    <title>Diplomado en Growth Hacking y Marketing - UAI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #1da07f 0%, #15876b 100%);
+            color: white;
+            padding: 60px 0;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+
+        header p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto;
+            opacity: 0.95;
+        }
+
+        .logo {
+            background: white;
+            padding: 10px 30px;
+            margin-bottom: 30px;
+            display: inline-block;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .logo h2 {
+            color: #1da07f;
+            font-size: 2rem;
+            font-weight: 800;
+        }
+
+        /* Main Content */
+        main {
+            background: white;
+            margin: 40px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+            overflow: hidden;
+        }
+
+        section {
+            padding: 60px 40px;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        section:last-child {
+            border-bottom: none;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            color: #1da07f;
+            margin-bottom: 25px;
+            font-weight: 700;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background: #1da07f;
+            border-radius: 2px;
+        }
+
+        section h3 {
+            font-size: 1.5rem;
+            color: #2c3e50;
+            margin: 30px 0 15px 0;
+            font-weight: 600;
+        }
+
+        section p {
+            font-size: 1.1rem;
+            color: #555;
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        /* Cards */
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+
+        .card {
+            background: #f8f9fa;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 4px solid #1da07f;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 24px rgba(0,0,0,0.12);
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: #1da07f;
+            font-size: 1.3rem;
+        }
+
+        .card p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* List Styles */
+        ul {
+            list-style: none;
+            margin: 20px 0;
+        }
+
+        ul li {
+            padding: 12px 0 12px 30px;
+            position: relative;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        ul li::before {
+            content: '✓';
+            position: absolute;
+            left: 0;
+            color: #1da07f;
+            font-weight: bold;
+            font-size: 1.2rem;
+        }
+
+        /* CTA Button */
+        .cta {
+            background: linear-gradient(135deg, #1da07f 0%, #15876b 100%);
+            color: white;
+            padding: 60px 40px;
+            text-align: center;
+        }
+
+        .cta h2 {
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .cta h2::after {
+            display: none;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background: white;
+            color: #1da07f;
+            padding: 18px 50px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: 700;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+        }
+
+        .cta-button:hover {
+            transform: scale(1.05);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3);
+        }
+
+        /* Info Boxes */
+        .info-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px 0;
+            border-left: 5px solid #1da07f;
+        }
+
+        .info-box strong {
+            color: #1da07f;
+            font-size: 1.1rem;
+        }
+
+        /* Footer */
+        footer {
+            background: #2c3e50;
+            color: white;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 10px 0;
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 1.8rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            section {
+                padding: 40px 20px;
+            }
+
+            section h2 {
+                font-size: 1.6rem;
+            }
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Highlight Section */
+        .highlight {
+            background: linear-gradient(135deg, #fff8e1 0%, #fff3cd 100%);
+            border-left: 5px solid #ffc107;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h2>UAI</h2>
+            </div>
+            <h1>Diplomado en Growth Hacking y Marketing</h1>
+            <p>Adquiere conocimientos que permitan hacer crecer tu negocio bajo metodologías y herramientas prácticas del marketing y las ventas.</p>
+        </div>
+    </header>
+
+    <main class="container">
+        <section>
+            <h2>Bienvenida</h2>
+            <p>El Diplomado en Growth Hacking y Marketing de la Universidad Adolfo Ibáñez está diseñado para profesionales que buscan transformar sus negocios mediante estrategias innovadoras de crecimiento.</p>
+            <p>En un mundo digital en constante evolución, las empresas necesitan adoptar metodologías ágiles y centradas en el crecimiento. Este programa te proporcionará las herramientas y conocimientos necesarios para implementar estrategias efectivas de growth marketing.</p>
+        </section>
+
+        <section>
+            <h2>Objetivos</h2>
+            <p>El diplomado tiene como objetivo principal desarrollar competencias en:</p>
+            <ul>
+                <li>Implementar estrategias de growth hacking para acelerar el crecimiento de negocios digitales</li>
+                <li>Aplicar metodologías ágiles y experimentación continua en marketing</li>
+                <li>Dominar herramientas de análisis de datos y métricas de crecimiento</li>
+                <li>Diseñar e implementar funnels de conversión optimizados</li>
+                <li>Desarrollar estrategias de adquisición, activación y retención de usuarios</li>
+                <li>Utilizar automatización y tecnología para escalar estrategias de marketing</li>
+                <li>Optimizar el ROI de las inversiones en marketing digital</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>¿A quién va dirigido?</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Emprendedores</h3>
+                    <p>Fundadores de startups y negocios digitales que buscan acelerar el crecimiento de sus proyectos.</p>
+                </div>
+                <div class="card">
+                    <h3>Profesionales de Marketing</h3>
+                    <p>Especialistas en marketing que desean actualizar sus conocimientos en estrategias de growth hacking.</p>
+                </div>
+                <div class="card">
+                    <h3>Gerentes y Directores</h3>
+                    <p>Ejecutivos responsables de áreas comerciales y de crecimiento que necesitan implementar nuevas metodologías.</p>
+                </div>
+                <div class="card">
+                    <h3>Product Managers</h3>
+                    <p>Profesionales a cargo de productos digitales que requieren conocimientos de growth marketing.</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="highlight">
+            <h2>¿Qué es el Growth Marketing?</h2>
+            <p>El Growth Marketing es una evolución del marketing tradicional que se enfoca en el crecimiento sostenible y medible a través de todo el customer journey. A diferencia del marketing tradicional que se concentra principalmente en la adquisición, el growth marketing abarca todo el embudo de conversión: adquisición, activación, retención, referencia e ingresos (el framework AARRR).</p>
+
+            <div class="info-box">
+                <strong>Metodología Growth Hacking:</strong> Se basa en la experimentación rápida a través de múltiples canales de marketing y desarrollo de productos para identificar las formas más efectivas y eficientes de hacer crecer un negocio.
+            </div>
+        </section>
+
+        <section>
+            <h2>Contenidos del Programa</h2>
+            <h3>Módulo 1: Fundamentos de Growth Marketing</h3>
+            <ul>
+                <li>Introducción al Growth Hacking y diferencias con marketing tradicional</li>
+                <li>Framework AARRR (Acquisition, Activation, Retention, Referral, Revenue)</li>
+                <li>Definición de métricas clave y KPIs de crecimiento</li>
+                <li>Cultura de experimentación y mentalidad growth</li>
+            </ul>
+
+            <h3>Módulo 2: Análisis y Datos</h3>
+            <ul>
+                <li>Analytics y herramientas de medición (Google Analytics, Mixpanel, Amplitude)</li>
+                <li>Interpretación de datos y toma de decisiones basada en métricas</li>
+                <li>Cohort analysis y análisis de retención</li>
+                <li>A/B testing y experimentación continua</li>
+            </ul>
+
+            <h3>Módulo 3: Estrategias de Adquisición</h3>
+            <ul>
+                <li>Canales de adquisición digital (SEO, SEM, Social Media, Content Marketing)</li>
+                <li>Optimización de campañas de paid media</li>
+                <li>Estrategias de growth hacking para adquisición viral</li>
+                <li>Customer Acquisition Cost (CAC) y optimización</li>
+            </ul>
+
+            <h3>Módulo 4: Optimización de Conversión</h3>
+            <ul>
+                <li>Diseño de funnels de conversión efectivos</li>
+                <li>CRO (Conversion Rate Optimization) y mejores prácticas</li>
+                <li>Landing pages de alto impacto</li>
+                <li>Técnicas de copywriting y persuasión</li>
+            </ul>
+
+            <h3>Módulo 5: Retención y Monetización</h3>
+            <ul>
+                <li>Estrategias de retención y engagement de usuarios</li>
+                <li>Email marketing y automatización</li>
+                <li>Programas de referidos y crecimiento viral</li>
+                <li>Optimización del Lifetime Value (LTV)</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Información Académica</h2>
+            <div class="info-box">
+                <p><strong>Modalidad:</strong> Online / Híbrida</p>
+                <p><strong>Duración:</strong> 4-6 meses</p>
+                <p><strong>Formato:</strong> Clases en vivo y contenido asíncrono</p>
+                <p><strong>Certificación:</strong> Diplomado UAI en Growth Hacking y Marketing</p>
+            </div>
+        </section>
+
+        <section class="cta">
+            <h2>¿Listo para impulsar el crecimiento de tu negocio?</h2>
+            <a href="https://www.uai.cl/postgrados/diplomados/diplomado-en-growth-hacking-marketing" class="cta-button">Más Información e Inscripción</a>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p><strong>Universidad Adolfo Ibáñez</strong></p>
+            <p>Diplomado en Growth Hacking y Marketing</p>
+            <p>© 2025 UAI - Todos los derechos reservados</p>
+            <p><a href="https://www.uai.cl" style="color: #1da07f; text-decoration: none;">www.uai.cl</a></p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scroll para la navegación
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+
+        // Animación de fade-in al hacer scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -100px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = '0';
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
